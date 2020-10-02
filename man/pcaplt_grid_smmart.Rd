@@ -5,8 +5,7 @@
 \title{PCA plot of multiple principle components. 1vs2 2vs3 1vs3
 Filtered by SMMART samples only}
 \usage{
-pcaplt_grid_smmart(mat, metadat = md, shape = "diagnosis",
-  title = "PCA Plots")
+pcaplt_grid_smmart(mat, metadat = md, shape = "diagnosis", title = "PCA Plots")
 }
 \arguments{
 \item{title}{(string): title of the scatter.}

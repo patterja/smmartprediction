@@ -4,8 +4,12 @@
 \alias{pcaplt_grid_smmart_tissue}
 \title{PCA plot of multiple PCs with tissue not batch as shape condition}
 \usage{
-pcaplt_grid_smmart_tissue(mat, metadat = md, shape = "tissue",
-  title = "PCA Plots")
+pcaplt_grid_smmart_tissue(
+  mat,
+  metadat = md,
+  shape = "tissue",
+  title = "PCA Plots"
+)
 }
 \arguments{
 \item{title}{(string): title of the scatter}
