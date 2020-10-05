@@ -13,7 +13,7 @@
 #'
 #' @export
 
-normalizeRUV <- function(exp_matx=read.csv("/Users/patterja/Box\ Sync/Heiser_Atwater/SMMART_NORMALIZATION/DATA_MATRICES/PROCESSED/tpm_breast_20190214.txt", sep="\t", row.names = 1),
+normalizeRUV <- function(exp_matx=read.csv("tpm_breast_20190214.txt", sep="\t", row.names = 1),
                          includeBCCL=FALSE, filtperc=10, mincnt=3, normtype="NONE", setk) {
 
   #smmart samples differentiated by sequencer name

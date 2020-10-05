@@ -4,8 +4,6 @@
 #' @param cell_line_response (string):cell_line_response_threshold_0.50_large_and_small_screen.RData
 #' @param path_to_targetid (string): path to target_id.txt
 #' @param path_to_trusight (string): path to gene list Trusight.csv
-#' @param kbmtl_train (string): "kbmtl_semisupervised_classification_variational_train.R"
-#' @param kbmtl_test (string): "kbmtl_semisupervised_classification_variational_test.R"
 #' @param threshold (numeric): 0.25, 0.5, 0.75
 #' @return smmart_trained_machine_learning_model.RData
 #' @export
@@ -13,13 +11,9 @@
 
 drugPredTrain <- function(path_to_bcclsmmart,
                           cell_line_response = "cell_line_response_threshold_0.50_large_and_small_screen.RData",
-                          kbmtl_train ="kbmtl_semisupervised_classification_variational_train.R",
-                          kbmtl_test = "kbmtl_semisupervised_classification_variational_test.R",
                           path_to_targetid = "target_id.txt",
                           path_to_trusight = "Trusight_genes.csv",
                           threshold = 0.5) {
-  source(kbmtl_train)
-  source(kbmtl_test)
 
   normalization_type <- "none"
   classification_type <- "trusight"
